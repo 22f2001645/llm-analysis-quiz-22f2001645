@@ -6,8 +6,7 @@ import os
 from app.solver.quiz_chain import solve_quiz_chain
 
 app = FastAPI()
-
-SECRET = "Ankur123"  
+ 
 SECRET = os.getenv("QUIZ_SECRET", "")
 class Payload(BaseModel):
     email: str
