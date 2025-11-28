@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+playwright
+pydantic
+pandas
+pdfplumber
+requests
+numpy
+beautifulsoup4
+matplotlib
+pillow
+pytesseract
