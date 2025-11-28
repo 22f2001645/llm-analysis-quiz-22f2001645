@@ -1,13 +1,14 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+import os
+
 
 from app.solver.quiz_chain import solve_quiz_chain
 
 app = FastAPI()
 
-SECRET = "your_secret_here"   # Same as Google Form
-
-
+SECRET = "Ankur123"  
+SECRET = os.getenv("QUIZ_SECRET", "")
 class Payload(BaseModel):
     email: str
     secret: str
